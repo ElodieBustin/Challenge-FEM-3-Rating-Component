@@ -1,0 +1,84 @@
+@import 'variables';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $veryDarkBlue;
+    font-size: 15px;
+    height: 100vh;
+    color: $white;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+}
+
+.component{
+    padding: 1.5rem;
+    background-color: $darkBlue;
+    width: 370px;
+    margin: auto;
+    border-radius: 10px;
+
+    .image{
+        display: inline-block;
+
+
+        img{
+            background-color: hsl(211, 19%, 22%);
+            color: $lightGrey;
+            padding: 0.8rem;
+            border-radius: 50%;
+        }
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    p{
+        color: $lightGrey;
+        line-height: 25px;
+
+    }
+
+    .rating__numbers{
+
+        &--container{
+            display: flex;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+            li{
+                list-style-type: none;
+                background-color: hsl(211, 19%, 22%);
+                color: $lightGrey;
+                padding: 0.9rem;
+                border-radius: 50%;
+                font-size: 0.8rem;
+                font-weight: 700;
+                justify-self: center;
+            }
+        }
+    }
+
+    .button{
+        background-color: $orange;
+        padding: 1rem;
+        border-radius: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 0.7rem;
+    }
+
+    &__thankYou{
+        display: none;
+    }
+}
+
