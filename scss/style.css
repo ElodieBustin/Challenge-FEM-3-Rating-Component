@@ -24,10 +24,6 @@ body {
   border-radius: 10px;
 }
 
-.component__rating {
-  display: none;
-}
-
 .component__rating .image {
   display: inline-block;
 }
@@ -39,7 +35,7 @@ body {
   border-radius: 50%;
 }
 
-.component__rating .h1 {
+.component__rating h1 {
   font-weight: 700;
   font-size: 1.5rem;
   margin: 1rem 0;
@@ -109,5 +105,9 @@ body {
 .component__thankYou p {
   color: #959eac;
   line-height: 20px;
+}
+
+.component .hidden {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
