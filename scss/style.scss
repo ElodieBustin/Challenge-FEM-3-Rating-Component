@@ -17,68 +17,98 @@ body{
 }
 
 .component{
-    padding: 1.5rem;
+    padding: 2rem;
     background-color: $darkBlue;
     width: 370px;
     margin: auto;
     border-radius: 10px;
 
-    .image{
-        display: inline-block;
-
-
-        img{
-            background-color: hsl(211, 19%, 22%);
-            color: $lightGrey;
-            padding: 0.8rem;
-            border-radius: 50%;
-        }
-    }
-
-    h1{
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
-
-    p{
-        color: $lightGrey;
-        line-height: 25px;
-
-    }
-
-    .rating__numbers{
-
-        &--container{
-            display: flex;
-            justify-content: space-between;
-            margin: 1.5rem 0;
-            li{
-                list-style-type: none;
+    &__rating{
+        display: none;
+        .image{
+            display: inline-block;
+    
+    
+            img{
                 background-color: hsl(211, 19%, 22%);
                 color: $lightGrey;
-                padding: 0.9rem;
+                padding: 0.8rem;
                 border-radius: 50%;
-                font-size: 0.8rem;
-                font-weight: 700;
-                justify-self: center;
             }
+        }
+    
+        .h1{
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+    
+        p{
+            color: $lightGrey;
+            line-height: 25px;
+    
+        }
+    
+        .rating__numbers{
+    
+            &--container{
+                display: flex;
+                justify-content: space-between;
+                margin: 1.5rem 0;
+                li{
+                    list-style-type: none;
+                    background-color: hsl(211, 19%, 22%);
+                    color: $lightGrey;
+                    padding: 1rem;
+                    border-radius: 50%;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    justify-self: center;
+                }
+            }
+        }
+    
+        .button{
+            background-color: $orange;
+            padding: 1rem;
+            border-radius: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 0.7rem;
         }
     }
 
-    .button{
-        background-color: $orange;
-        padding: 1rem;
-        border-radius: 25px;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 700;
-        margin-bottom: 0.7rem;
-    }
+    
 
     &__thankYou{
-        display: none;
+        text-align: center;
+
+        .image--container{
+            margin-bottom: 0.5rem;
+        }
+
+        .selected__text{
+            display: inline-block;
+            margin: 1rem 0;
+            background-color: hsl(211, 19%, 22%);
+            color: $orange;
+            padding: 0.5rem 0.8rem;
+            border-radius: 25px;
+
+        }
+        h1{
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        p{
+            color: $lightGrey;
+            line-height: 20px;
+        }
+
     }
 }
 
