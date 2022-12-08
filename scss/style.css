@@ -66,6 +66,14 @@ body {
   font-weight: 700;
   -ms-grid-column-align: center;
       justify-self: center;
+  -webkit-transition: color, background-color 300ms ease-in-out;
+  transition: color, background-color 300ms ease-in-out;
+}
+
+.component__rating .rating__numbers--container li:hover {
+  cursor: pointer;
+  background-color: #fb7413;
+  color: white;
 }
 
 .component__rating .button {
@@ -77,6 +85,14 @@ body {
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 0.7rem;
+  -webkit-transition: color, background-color 300ms ease-in-out;
+  transition: color, background-color 300ms ease-in-out;
+}
+
+.component__rating .button:hover {
+  color: #fb7413;
+  background-color: white;
+  cursor: pointer;
 }
 
 .component__thankYou {

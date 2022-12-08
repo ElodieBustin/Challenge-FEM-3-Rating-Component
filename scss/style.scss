@@ -64,6 +64,13 @@ body{
                     font-size: 0.8rem;
                     font-weight: 700;
                     justify-self: center;
+                    transition: color, background-color 300ms ease-in-out;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $orange;
+                        color: $white;
+                    }
                 }
             }
         }
@@ -77,6 +84,13 @@ body{
             letter-spacing: 2px;
             font-weight: 700;
             margin-bottom: 0.7rem;
+            transition: color, background-color 300ms ease-in-out;
+
+            &:hover{
+                color: $orange;
+                background-color: $white;
+                cursor: pointer;
+            }
         }
     }
 
